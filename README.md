@@ -141,4 +141,66 @@ optional arguments:
 
 The MESC-SD uses a dictionary-based sparse coding representation to jointly estimate parametric diffusion maps using 3D input patches. The implementation codes are under ```./3D_MESC_SD/```.
  
+ Training:
+ 
+ ```
+ usage: python train_3d.py [-h] [--sampling SAMPLING] [--batch_size BATCH_SIZE]
+                   [--num_of_channels NUM_OF_CHANNELS]
+                   [--num_of_voxels NUM_OF_VOXELS]
+                   [--num_hidden_lstm NUM_HIDDEN_LSTM]
+                   [--num_hidden_fc NUM_HIDDEN_FC] [--epochs EPOCHS] [--lr LR]
+                   [--data_path DATA_PATH]
+
+Training MESC-SD
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --sampling SAMPLING   Q-space undersampling pattern name
+  --batch_size BATCH_SIZE
+                        Training batch size
+  --num_of_channels NUM_OF_CHANNELS
+                        Number of MESC_SD input channels
+  --num_of_voxels NUM_OF_VOXELS
+                        Number of voxels in 3D input patches
+  --num_hidden_lstm NUM_HIDDEN_LSTM
+                        Number of hidden nodes in LSTM units
+  --num_hidden_fc NUM_HIDDEN_FC
+                        Number of hidden nodes in FC layers
+  --epochs EPOCHS       Number of training epochs
+  --lr LR               Initial learning rate
+  --data_path DATA_PATH
+                        Path to the data 
+ ```
+ 
+ Testing:
+ 
+ ```
+ usage: python test_3d.py [-h] [--sampling SAMPLING] [--batch_size BATCH_SIZE]
+                  [--num_of_channels NUM_OF_CHANNELS]
+                  [--num_of_voxels NUM_OF_VOXELS]
+                  [--num_hidden_lstm NUM_HIDDEN_LSTM]
+                  [--num_hidden_fc NUM_HIDDEN_FC] [--data_path DATA_PATH]
+                  [--test_cases TEST_CASES]
+
+MESC-SD testing
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --sampling SAMPLING   Q-space undersampling pattern name
+  --batch_size BATCH_SIZE
+                        Testing batch size
+  --num_of_channels NUM_OF_CHANNELS
+                        Number of MESC_SD input channels
+  --num_of_voxels NUM_OF_VOXELS
+                        Number of voxels in 3D input patches
+  --num_hidden_lstm NUM_HIDDEN_LSTM
+                        Number of hidden nodes in LSTM units
+  --num_hidden_fc NUM_HIDDEN_FC
+                        Number of hidden nodes in FC layers
+  --data_path DATA_PATH
+                        Path to the data
+  --test_cases TEST_CASES
+                        List of test subjects ids`
+ 
+ ```
  
