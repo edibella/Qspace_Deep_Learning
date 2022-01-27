@@ -3,11 +3,13 @@ message: "If you use the codes in this repository, please cite it as below."
 type: article
 authors:
 - family-names: "HashemizadehKolowri", "Chen", "Adluru", "DiBella"
-- given-names: "SeyyedKazem", "Rong-Rong", "Ganesh", "Edward V. R."
+given-names: "SeyyedKazem", "Rong-Rong", "Ganesh", "Edward V. R."
   
 title: "Jointly estimating parametric maps of multiple diffusion models from undersampled q-space data: A comparison of three deep learning approaches"
 journal: "Magnetic Resonance in Medicine"
 volume:
+month: 1
+year: 2022
 number: 
 start: 
 end:
