@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use the codes in this repository, please cite it as below."
+type: article
+authors:
+- family-names: "HashemizadehKolowri", "Chen", "Adluru", "DiBella"
+- given-names: "SeyyedKazem", "Rong-Rong", "Ganesh", "Edward V. R."
+  
+title: "Jointly estimating parametric maps of multiple diffusion models from undersampled q-space data: A comparison of three deep learning approaches"
+journal: "Magnetic Resonance in Medicine"
+volume:
+number: 
+start: 
+end:
+keywords: "deep learning, joint estimation, multiple diffusion models, undersampled q-Space"
+doi: "https://doi.org/10.1002/mrm.29162:
+url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29162"
+eprint: "https://onlinelibrary.wiley.com/doi/pdf/10.1002/mrm.29162"
+abstract: "Purpose While advanced diffusion techniques have been found valuable in many studies, their clinical availability has been hampered partly due to their long scan times. Moreover, each diffusion technique can only extract a few relevant microstructural features. Using multiple diffusion methods may help to better understand the brain microstructure, which requires multiple expensive model fittings. In this work, we compare deep learning (DL) approaches to jointly estimate parametric maps of multiple diffusion representations/models from highly undersampled q-space data. Methods We implement three DL approaches to jointly estimate parametric maps of diffusion tensor imaging (DTI), diffusion kurtosis imaging (DKI), neurite orientation dispersion and density imaging (NODDI), and multi-compartment spherical mean technique (SMT). A per-voxel q-space deep learning (1D-qDL), a per-slice convolutional neural network (2D-CNN), and a 3D-patch-based microstructure estimation with sparse coding using a separable dictionary (MESC-SD) network are considered. Results The accuracy of estimated diffusion maps depends on the q-space undersampling, the selected network architecture, and the region and the parameter of interest. The smallest errors are observed for the MESC-SD network architecture (less than 10\% normalized RMSE in most brain regions). Conclusion Our experiments show that DL methods are very efficient tools to simultaneously estimate several diffusion maps from undersampled q-space data. These methods can significantly reduce both the scan (∼6-fold) and processing times (∼25-fold) for estimating advanced parametric diffusion maps while achieving a reasonable accuracy."
+
